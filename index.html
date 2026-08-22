@@ -1,0 +1,1323 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <!-- Security: this site loads nothing from outside itself
+         (no external fonts/scripts/CDNs), so a strict Content-Security-Policy
+         costs nothing and blocks most injection attacks outright. -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data:; script-src 'self'; style-src 'self'; base-uri 'self'; form-action 'self' mailto:; frame-ancestors 'none'; object-src 'none';">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+
+    <meta
+        name="description"
+        content="Mantech Media covers technology, business, devices, AI and the changing technology landscape in South Africa and around the world."
+    >
+
+    <meta
+        name="theme-color"
+        content="#f7f7f5"
+    >
+
+    <title>Mantech Media — Technology, Business & Innovation</title>
+
+
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/icons/favicon-32.png" media="(prefers-color-scheme: light)">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/icons/favicon-16.png" media="(prefers-color-scheme: light)">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/icons/favicon-32-dark.png" media="(prefers-color-scheme: dark)">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/icons/favicon-16-dark.png" media="(prefers-color-scheme: dark)">
+    <link rel="apple-touch-icon" href="assets/icons/apple-touch-icon.png">
+
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Mantech Media">
+    <meta property="og:image" content="assets/images/og-image.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+
+<body>
+
+
+    <!-- =========================
+         HEADER
+    ========================== -->
+
+    <header class="site-header">
+
+        <div class="header-inner">
+
+
+            <a href="index.html" class="brand">
+
+                <img
+                    src="assets/icons/lockup-black.png"
+                    alt="Mantech Media Logo"
+                    class="logo"
+                >
+
+            </a>
+
+
+            <!-- DESKTOP NAVIGATION -->
+
+            <nav class="desktop-navigation">
+
+                <a href="pages/category.html?category=news">
+                    News
+                </a>
+
+                <a href="pages/category.html?category=south-africa">
+                    South Africa
+                </a>
+
+                <a href="pages/category.html?category=apple">
+                    Apple
+                </a>
+
+                <a href="pages/category.html?category=devices">
+                    Devices
+                </a>
+
+                <a href="pages/category.html?category=business">
+                    Business
+                </a>
+
+                <a href="pages/studio.html" class="nav-studio-link">
+                    Studio
+                </a>
+
+            </nav>
+
+
+            <div class="header-actions">
+
+
+                <button
+                    class="icon-button"
+                    id="searchButton"
+                    aria-label="Open search"
+                    type="button"
+                >
+
+                    <span class="search-icon"></span>
+
+                </button>
+
+
+                <a
+                    href="#newsletter"
+                    class="subscribe-button"
+                >
+                    Subscribe
+                </a>
+
+
+                <button
+                    class="menu-button"
+                    id="menuButton"
+                    aria-label="Open menu"
+                    aria-expanded="false"
+                    type="button"
+                >
+
+                    <span></span>
+                    <span></span>
+
+                </button>
+
+
+            </div>
+
+        </div>
+
+
+        <!-- =========================
+             MOBILE NAVIGATION
+        ========================== -->
+
+        <div
+            class="mobile-navigation"
+            id="mobileNavigation"
+        >
+
+            <nav>
+
+                <a href="index.html">
+                    Home
+                </a>
+
+                <a href="pages/category.html?category=news">
+                    News
+                </a>
+
+                <a href="pages/category.html?category=south-africa">
+                    South Africa
+                </a>
+
+                <a href="pages/category.html?category=apple">
+                    Apple
+                </a>
+
+                <a href="pages/category.html?category=devices">
+                    Devices
+                </a>
+
+                <a href="pages/category.html?category=business">
+                    Business
+                </a>
+
+            </nav>
+
+
+            <div class="mobile-navigation-footer">
+
+                <a href="#newsletter">
+                    Mantech Daily
+                </a>
+
+                <a href="pages/studio.html">
+                    Mantech Studio
+                </a>
+
+            </div>
+
+        </div>
+
+    </header>
+
+
+    <!-- =========================
+         SEARCH
+    ========================== -->
+
+    <div
+        class="search-overlay"
+        id="searchOverlay"
+    >
+
+        <div class="search-container">
+
+
+            <div class="search-top">
+
+                <span>
+                    Search Mantech
+                </span>
+
+                <button
+                    id="closeSearch"
+                    type="button"
+                >
+                    Close
+                </button>
+
+            </div>
+
+
+            <input
+                type="search"
+                id="searchInput"
+                placeholder="Search stories, topics and technology..."
+                autocomplete="off"
+            >
+
+
+            <div
+                class="search-results"
+                id="searchResults"
+            >
+
+                <p>
+                    Start typing to search Mantech.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+    <main>
+
+
+        <!-- =========================
+             INTRO
+        ========================== -->
+
+        <section class="publication-intro">
+
+            <div
+                class="intro-date"
+                id="todayDate"
+            >
+
+            </div>
+
+
+            <div class="intro-title">
+
+                <h1>
+
+                    Technology,
+
+                    <em>
+                        without the noise.
+                    </em>
+
+                </h1>
+
+
+                <p>
+
+                    Mantech Media explores the technology,
+                    businesses and ideas shaping South Africa
+                    and the world.
+
+                </p>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =========================
+             FEATURED STORY
+        ========================== -->
+
+        <section class="featured-section" id="featuredSection">
+
+            <article class="featured-story" id="featuredStory">
+
+
+                <a
+                    href="pages/article.html?id=technology-decisions-next-decade"
+                    class="featured-image"
+                >
+
+                    <img
+                        src="https://images.unsplash.com/photo-1518770660439-4636190af475"
+                        alt="Computer hardware and technology"
+                    >
+
+                </a>
+
+
+                <div class="featured-information">
+
+
+                    <div class="story-meta">
+
+                        <span>
+                            Technology
+                        </span>
+
+                        <span>
+                            6 min read
+                        </span>
+
+                    </div>
+
+
+                    <h2>
+
+                        <a href="pages/article.html?id=technology-decisions-next-decade">
+
+                            The technology decisions
+                            shaping the next decade
+
+                        </a>
+
+                    </h2>
+
+
+                    <p>
+
+                        Artificial intelligence, computing,
+                        connectivity and new digital platforms
+                        are changing how people and businesses
+                        operate.
+
+                    </p>
+
+
+                    <a
+                        href="pages/article.html?id=technology-decisions-next-decade"
+                        class="text-link"
+                    >
+
+                        Read story
+
+                        <span>
+                            →
+                        </span>
+
+                    </a>
+
+
+                </div>
+
+            </article>
+
+        </section>
+
+
+
+        <!-- =========================
+             LATEST
+        ========================== -->
+
+        <section class="content-section">
+
+
+            <div class="section-heading">
+
+                <div>
+
+                    <span class="section-number">
+                        01
+                    </span>
+
+                    <h2>
+                        Latest
+                    </h2>
+
+                </div>
+
+
+                <a
+                    href="pages/category.html?category=news"
+                    class="section-link"
+                >
+                    View all stories →
+                </a>
+
+            </div>
+
+
+
+            <div class="latest-list" id="latestList">
+
+
+                <article class="latest-story">
+
+                    <a
+                        href="pages/article.html?id=ai-everyday-business-tool"
+                        class="latest-image"
+                    >
+
+                        <img
+                            src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3"
+                            alt="Person using a computer"
+                        >
+
+                    </a>
+
+
+                    <div class="latest-information">
+
+                        <div class="story-meta">
+
+                            <span>
+                                AI
+                            </span>
+
+                            <span>
+                                5 min read
+                            </span>
+
+                        </div>
+
+
+                        <h3>
+
+                            <a href="pages/article.html?id=ai-everyday-business-tool">
+
+                                AI is moving from experiment
+                                to everyday business tool
+
+                            </a>
+
+                        </h3>
+
+
+                        <p>
+
+                            Businesses are moving beyond
+                            AI experimentation and beginning
+                            to build it into everyday work.
+
+                        </p>
+
+
+                        <time>
+                            August 16, 2026
+                        </time>
+
+                    </div>
+
+                </article>
+
+
+
+                <article class="latest-story">
+
+                    <a
+                        href="pages/article.html?id=tools-changing-software-development"
+                        class="latest-image"
+                    >
+
+                        <img
+                            src="https://images.unsplash.com/photo-1488590528505-98d2b5aba04b"
+                            alt="Laptop displaying technology"
+                        >
+
+                    </a>
+
+
+                    <div class="latest-information">
+
+                        <div class="story-meta">
+
+                            <span>
+                                Developers
+                            </span>
+
+                            <span>
+                                4 min read
+                            </span>
+
+                        </div>
+
+
+                        <h3>
+
+                            <a href="pages/article.html?id=tools-changing-software-development">
+
+                                The tools changing how
+                                software is being built
+
+                            </a>
+
+                        </h3>
+
+
+                        <p>
+
+                            A new generation of development
+                            tools is changing the relationship
+                            between people and software.
+
+                        </p>
+
+
+                        <time>
+                            August 15, 2026
+                        </time>
+
+                    </div>
+
+                </article>
+
+
+
+                <article class="latest-story">
+
+                    <a
+                        href="pages/article.html?id=relationship-with-technology"
+                        class="latest-image"
+                    >
+
+                        <img
+                            src="https://images.unsplash.com/photo-1550745165-9bc0b252726f"
+                            alt="Retro technology device"
+                        >
+
+                    </a>
+
+
+                    <div class="latest-information">
+
+                        <div class="story-meta">
+
+                            <span>
+                                Devices
+                            </span>
+
+                            <span>
+                                3 min read
+                            </span>
+
+                        </div>
+
+
+                        <h3>
+
+                            <a href="pages/article.html?id=relationship-with-technology">
+
+                                Why our relationship with
+                                technology keeps changing
+
+                            </a>
+
+                        </h3>
+
+
+                        <p>
+
+                            From smartphones to wearables,
+                            the devices around us continue
+                            to evolve.
+
+                        </p>
+
+
+                        <time>
+                            August 15, 2026
+                        </time>
+
+                    </div>
+
+                </article>
+
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =========================
+             SOUTH AFRICA
+        ========================== -->
+
+        <section class="content-section">
+
+
+            <div class="section-heading">
+
+                <div>
+
+                    <span class="section-number">
+                        02
+                    </span>
+
+                    <h2>
+                        South Africa
+                    </h2>
+
+                </div>
+
+
+                <a
+                    href="pages/category.html?category=south-africa"
+                    class="section-link"
+                >
+                    Explore →
+                </a>
+
+            </div>
+
+
+
+            <div class="south-africa-layout" id="southAfricaLayout">
+
+
+                <article class="sa-main-story">
+
+
+                    <a
+                        href="pages/article.html?id=south-africa-new-tech-chapter"
+                        class="sa-image"
+                    >
+
+                        <img
+                            src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab"
+                            alt="Modern city buildings"
+                        >
+
+                    </a>
+
+
+                    <div class="story-meta">
+
+                        <span>
+                            South Africa
+                        </span>
+
+                        <span>
+                            7 min read
+                        </span>
+
+                    </div>
+
+
+                    <h3>
+
+                        <a href="pages/article.html?id=south-africa-new-tech-chapter">
+
+                            South Africa is entering
+                            a new chapter in technology
+
+                        </a>
+
+                    </h3>
+
+
+                    <p>
+
+                        From fintech and artificial intelligence
+                        to infrastructure and digital services,
+                        technology is becoming increasingly
+                        important to the country's future.
+
+                    </p>
+
+                </article>
+
+
+
+                <div class="sa-side-stories">
+
+
+                    <article class="compact-story">
+
+                        <div>
+
+                            <span class="compact-category">
+                                FINTECH
+                            </span>
+
+                            <h3>
+
+                                <a href="pages/article.html?id=african-fintech-finance">
+
+                                    How African fintech
+                                    is changing finance
+
+                                </a>
+
+                            </h3>
+
+                        </div>
+
+                        <span class="story-arrow">
+                            ↗
+                        </span>
+
+                    </article>
+
+
+
+                    <article class="compact-story">
+
+                        <div>
+
+                            <span class="compact-category">
+                                INFRASTRUCTURE
+                            </span>
+
+                            <h3>
+
+                                <a href="pages/article.html?id=africas-digital-future">
+
+                                    The race to build
+                                    Africa's digital future
+
+                                </a>
+
+                            </h3>
+
+                        </div>
+
+                        <span class="story-arrow">
+                            ↗
+                        </span>
+
+                    </article>
+
+
+
+                    <article class="compact-story">
+
+                        <div>
+
+                            <span class="compact-category">
+                                STARTUPS
+                            </span>
+
+                            <h3>
+
+                                <a href="pages/article.html?id=african-founders-building-next">
+
+                                    The African founders
+                                    building what's next
+
+                                </a>
+
+                            </h3>
+
+                        </div>
+
+                        <span class="story-arrow">
+                            ↗
+                        </span>
+
+                    </article>
+
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =========================
+             DEVICES
+        ========================== -->
+
+        <section class="content-section">
+
+
+            <div class="section-heading">
+
+                <div>
+
+                    <span class="section-number">
+                        03
+                    </span>
+
+                    <h2>
+                        Devices
+                    </h2>
+
+                </div>
+
+
+                <a
+                    href="pages/category.html?category=devices"
+                    class="section-link"
+                >
+                    Explore devices →
+                </a>
+
+            </div>
+
+
+
+            <div class="device-layout" id="deviceLayout">
+
+
+                <article class="device-main">
+
+                    <a
+                        href="pages/article.html?id=smartphone-more-than-phone"
+                        class="device-main-image"
+                    >
+
+                        <img
+                            src="https://images.unsplash.com/photo-1592899677977-9c10ca588bbd"
+                            alt="Modern smartphone"
+                        >
+
+                    </a>
+
+
+                    <div class="story-meta">
+
+                        <span>
+                            Smartphones
+                        </span>
+
+                    </div>
+
+
+                    <h3>
+
+                        <a href="pages/article.html?id=smartphone-more-than-phone">
+
+                            The smartphone is becoming
+                            more than a phone
+
+                        </a>
+
+                    </h3>
+
+                </article>
+
+
+
+                <div class="device-side">
+
+
+                    <article class="device-small">
+
+                        <a href="pages/article.html?id=personal-computing">
+
+                            <img
+                                src="https://images.unsplash.com/photo-1517336714731-489689fd1ca8"
+                                alt="Laptop"
+                            >
+
+                        </a>
+
+
+                        <div>
+
+                            <span>
+                                COMPUTERS
+                            </span>
+
+                            <h3>
+
+                                <a href="pages/article.html?id=personal-computing">
+
+                                    The new era of
+                                    personal computing
+
+                                </a>
+
+                            </h3>
+
+                        </div>
+
+                    </article>
+
+
+
+                    <article class="device-small">
+
+                        <a href="pages/article.html?id=after-smartwatch">
+
+                            <img
+                                src="https://images.unsplash.com/photo-1546868871-7041f2a55e13"
+                                alt="Smartwatch"
+                            >
+
+                        </a>
+
+
+                        <div>
+
+                            <span>
+                                WEARABLES
+                            </span>
+
+                            <h3>
+
+                                <a href="pages/article.html?id=after-smartwatch">
+
+                                    What comes after
+                                    the smartwatch?
+
+                                </a>
+
+                            </h3>
+
+                        </div>
+
+                    </article>
+
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =========================
+             BUSINESS
+        ========================== -->
+
+        <section class="business-section">
+
+
+            <div class="business-heading">
+
+                <span>
+                    04 — BUSINESS
+                </span>
+
+                <h2>
+                    The business
+                    of technology.
+                </h2>
+
+            </div>
+
+
+
+            <div class="business-stories" id="businessStories">
+
+
+                <article>
+
+                    <span>
+                        AI ECONOMY
+                    </span>
+
+                    <h3>
+
+                        <a href="pages/article.html?id=companies-ai-economy">
+
+                            The companies competing
+                            to define the AI economy
+
+                        </a>
+
+                    </h3>
+
+
+                    <a
+                        href="pages/article.html?id=companies-ai-economy"
+                        class="text-link"
+                    >
+                        Read story →
+                    </a>
+
+                </article>
+
+
+
+                <article>
+
+                    <span>
+                        FINANCE
+                    </span>
+
+                    <h3>
+
+                        <a href="pages/article.html?id=technology-financial-services">
+
+                            How technology is reshaping
+                            financial services
+
+                        </a>
+
+                    </h3>
+
+
+                    <a
+                        href="pages/article.html?id=technology-financial-services"
+                        class="text-link"
+                    >
+                        Read story →
+                    </a>
+
+                </article>
+
+
+
+                <article>
+
+                    <span>
+                        STARTUPS
+                    </span>
+
+                    <h3>
+
+                        <a href="pages/article.html?id=next-generation-tech-companies">
+
+                            Where the next generation
+                            of technology companies begins
+
+                        </a>
+
+                    </h3>
+
+
+                    <a
+                        href="pages/article.html?id=next-generation-tech-companies"
+                        class="text-link"
+                    >
+                        Read story →
+                    </a>
+
+                </article>
+
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =========================
+             PERSPECTIVE
+        ========================== -->
+
+        <section class="perspective">
+
+            <span>
+                THE MANTECH PERSPECTIVE
+            </span>
+
+
+            <h2>
+
+                We don't just cover
+                what technology does.
+
+                We ask
+
+                <em>
+                    where it takes us.
+                </em>
+
+            </h2>
+
+
+            <a href="pages/about.html">
+                Explore our perspective →
+            </a>
+
+        </section>
+
+
+
+        <!-- =========================
+             NEWSLETTER
+        ========================== -->
+
+        <section
+            class="newsletter"
+            id="newsletter"
+        >
+
+            <div class="newsletter-inner">
+
+                <span>
+                    MANTECH DAILY
+                </span>
+
+
+                <h2>
+                    Get today's stories,
+                    every day.
+                </h2>
+
+
+                <p>
+
+                    Drop your email below — we'll open your mail
+                    app with a message ready to go, so you're
+                    added to our daily updates.
+
+                </p>
+
+
+                <form id="newsletterForm">
+
+                    <input
+                        type="email"
+                        id="emailInput"
+                        placeholder="you@example.com"
+                        required
+                    >
+
+                    <button type="submit" id="subscribeButton">
+                        Subscribe
+                    </button>
+
+                </form>
+
+
+                <small id="newsletterMessage">
+
+                    One message to send, then you're set. We
+                    never share your email with anyone else.
+
+                </small>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =========================
+             STUDIO
+        ========================== -->
+
+        <section
+            class="studio"
+            id="studio"
+        >
+
+            <div class="studio-inner">
+
+                <span>
+                    MANTECH STUDIO
+                </span>
+
+
+                <h2>
+
+                    We cover technology.
+
+                    <br>
+
+                    <em>
+                        We also build with it.
+                    </em>
+
+                </h2>
+
+
+                <p>
+
+                    Mantech Studio works with organisations
+                    to create websites, digital products and
+                    experiences for the modern world.
+
+                </p>
+
+
+                <a href="pages/studio.html">
+                    Work with Mantech →
+                </a>
+
+            </div>
+
+        </section>
+
+
+    </main>
+
+
+
+    <!-- =========================
+         FOOTER
+    ========================== -->
+
+    <footer class="site-footer">
+
+
+        <div class="footer-top">
+
+
+            <div class="footer-brand">
+
+                <a href="index.html">
+                    Mantech
+                </a>
+
+                <p>
+                    Technology, business and the future.
+                </p>
+
+            </div>
+
+
+
+            <div class="footer-links">
+
+
+                <div>
+
+                    <span>
+                        Explore
+                    </span>
+
+                    <a href="index.html">
+                        Home
+                    </a>
+
+                    <a href="pages/category.html?category=news">
+                        News
+                    </a>
+
+                    <a href="pages/category.html?category=south-africa">
+                        South Africa
+                    </a>
+
+                    <a href="pages/category.html?category=apple">
+                        Apple
+                    </a>
+
+                    <a href="pages/category.html?category=devices">
+                        Devices
+                    </a>
+
+                    <a href="pages/category.html?category=business">
+                        Business
+                    </a>
+
+                </div>
+
+
+
+                <div>
+
+                    <span>
+                        Mantech
+                    </span>
+
+                    <a href="pages/about.html">
+                        About
+                    </a>
+
+                    <a href="pages/studio.html">
+                        Studio
+                    </a>
+
+                    <a href="pages/work.html">
+                        Our Work
+                    </a>
+
+                    <a href="pages/contact.html">
+                        Contact
+                    </a>
+
+                    <a href="pages/privacy.html">
+                        Privacy
+                    </a>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+
+
+        <div class="footer-bottom">
+
+            <span>
+                © 2026 Mantech Media
+            </span>
+
+            <span>
+                South Africa
+            </span>
+
+        </div>
+
+
+    </footer>
+
+
+
+    <script src="data/articles.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>

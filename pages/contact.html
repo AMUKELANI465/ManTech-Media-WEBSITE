@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <!-- Security: this site loads nothing from outside itself
+         (no external fonts/scripts/CDNs), so a strict Content-Security-Policy
+         costs nothing and blocks most injection attacks outright. -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data:; script-src 'self'; style-src 'self'; base-uri 'self'; form-action 'self' mailto:; frame-ancestors 'none'; object-src 'none';">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+
+    <meta name="description" content="Tell us what you need and we'll get back to you.">
+
+    <title>Let's talk — Mantech Media</title>
+
+
+    <link rel="icon" type="image/png" sizes="32x32" href="../assets/icons/favicon-32.png" media="(prefers-color-scheme: light)">
+    <link rel="icon" type="image/png" sizes="16x16" href="../assets/icons/favicon-16.png" media="(prefers-color-scheme: light)">
+    <link rel="icon" type="image/png" sizes="32x32" href="../assets/icons/favicon-32-dark.png" media="(prefers-color-scheme: dark)">
+    <link rel="icon" type="image/png" sizes="16x16" href="../assets/icons/favicon-16-dark.png" media="(prefers-color-scheme: dark)">
+    <link rel="apple-touch-icon" href="../assets/icons/apple-touch-icon.png">
+
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Mantech Media">
+    <meta property="og:image" content="../assets/images/og-image.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+
+    <link rel="stylesheet" href="../css/style.css">
+
+</head>
+
+
+<body class="category-page">
+
+
+    <!-- ==========================================
+         HEADER
+    =========================================== -->
+
+    <header class="site-header">
+
+        <div class="header-inner">
+
+            <a href="../index.html" class="brand">
+
+                <img
+                    src="../assets/icons/lockup-black.png"
+                    alt="Mantech Media"
+                    class="logo"
+                >
+
+            </a>
+
+
+            <nav class="desktop-navigation">
+
+                <a href="category.html?category=news">
+                    News
+                </a>
+
+                <a href="category.html?category=south-africa">
+                    South Africa
+                </a>
+
+                <a href="category.html?category=apple">
+                    Apple
+                </a>
+
+                <a href="category.html?category=devices">
+                    Devices
+                </a>
+
+                <a href="category.html?category=business">
+                    Business
+                </a>
+
+            </nav>
+
+
+            <div class="header-actions">
+
+                <button
+                    class="icon-button"
+                    id="searchButton"
+                    type="button"
+                    aria-label="Search"
+                >
+
+                    <span class="search-icon"></span>
+
+                </button>
+
+
+                <a
+                    href="../index.html#newsletter"
+                    class="subscribe-button"
+                >
+                    Subscribe
+                </a>
+
+
+                <button
+                    class="menu-button"
+                    id="menuButton"
+                    type="button"
+                    aria-label="Menu"
+                    aria-expanded="false"
+                >
+
+                    <span></span>
+                    <span></span>
+
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <!-- MOBILE NAVIGATION -->
+
+        <div
+            class="mobile-navigation"
+            id="mobileNavigation"
+        >
+
+            <nav>
+
+                <a href="../index.html">
+                    Home
+                </a>
+
+                <a href="category.html?category=news">
+                    News
+                </a>
+
+                <a href="category.html?category=south-africa">
+                    South Africa
+                </a>
+
+                <a href="category.html?category=apple">
+                    Apple
+                </a>
+
+                <a href="category.html?category=devices">
+                    Devices
+                </a>
+
+                <a href="category.html?category=business">
+                    Business
+                </a>
+
+            </nav>
+
+
+            <div class="mobile-navigation-footer">
+
+                <a href="../index.html#newsletter">
+                    Mantech Daily
+                </a>
+
+                <a href="studio.html">
+                    Mantech Studio
+                </a>
+
+            </div>
+
+        </div>
+
+    </header>
+
+
+
+    <!-- ==========================================
+         SEARCH
+    =========================================== -->
+
+    <div
+        class="search-overlay"
+        id="searchOverlay"
+    >
+
+        <div class="search-container">
+
+            <div class="search-top">
+
+                <span>
+                    Search Mantech
+                </span>
+
+                <button
+                    id="closeSearch"
+                    type="button"
+                >
+                    Close
+                </button>
+
+            </div>
+
+
+            <input
+                type="search"
+                id="searchInput"
+                placeholder="Search stories, topics and technology..."
+                autocomplete="off"
+            >
+
+
+            <div
+                class="search-results"
+                id="searchResults"
+            >
+
+                <p>
+                    Start typing to search Mantech.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+    <main>
+        <section class="category-hero">
+            <div class="category-hero-inner">
+                <div class="category-hero-number"><span>—</span></div>
+                <div class="category-hero-content">
+                    <span class="category-kicker">CONTACT</span>
+                    <h1>Let's talk.</h1>
+                    <p>Tell us what you need and we'll get back to you.</p>
+                </div>
+            </div>
+        </section>
+        <section class="content-section">
+            <div class="article-content">
+<p>For story tips, corrections or general enquiries, contact our CTO at <a href="mailto:mabasaamu0@gmail.com">mabasaamu0@gmail.com</a>.</p>
+<p>For Mantech Studio project enquiries — websites, software or IT services — use the same address and let us know what you're looking to build.</p>
+            </div>
+        </section>
+    </main>
+
+
+        <section class="studio">
+            <div class="studio-inner">
+                <p>Prefer to browse first?</p>
+                <a href="../index.html">See what we cover →</a>
+            </div>
+        </section>
+
+    <footer class="site-footer">
+
+        <div class="footer-top">
+
+
+            <div class="footer-brand">
+
+                <a href="../index.html">
+                    Mantech
+                </a>
+
+                <p>
+                    Technology, business and the future.
+                </p>
+
+            </div>
+
+
+            <div class="footer-links">
+
+
+                <div>
+
+                    <span>
+                        Explore
+                    </span>
+
+                    <a href="../index.html">
+                        Home
+                    </a>
+
+                    <a href="category.html?category=news">
+                        News
+                    </a>
+
+                    <a href="category.html?category=south-africa">
+                        South Africa
+                    </a>
+
+                    <a href="category.html?category=apple">
+                        Apple
+                    </a>
+
+                    <a href="category.html?category=devices">
+                        Devices
+                    </a>
+
+                    <a href="category.html?category=business">
+                        Business
+                    </a>
+
+                </div>
+
+
+                <div>
+
+                    <span>
+                        Mantech
+                    </span>
+
+                    <a href="about.html">
+                        About
+                    </a>
+
+                    <a href="studio.html">
+                        Studio
+                    </a>
+
+                    <a href="work.html">
+                        Our Work
+                    </a>
+
+                    <a href="contact.html">
+                        Contact
+                    </a>
+
+                    <a href="privacy.html">
+                        Privacy
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            <span>
+                © 2026 Mantech Media
+            </span>
+
+            <span>
+                South Africa
+            </span>
+
+        </div>
+
+    </footer>
+
+
+
+    <script src="../data/articles.js"></script>
+    <script src="../js/main.js"></script>
+
+</body>
+
+</html>
