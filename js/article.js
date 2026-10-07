@@ -56,6 +56,9 @@ const readTime =
 const image =
     document.getElementById("articleImage");
 
+const imageCredit =
+    document.getElementById("articleImageCredit");
+
 const content =
     document.getElementById("articleContent");
 
@@ -237,6 +240,13 @@ else {
     image.alt =
         article.title;
 
+    if (imageCredit && article.imageCredit) {
+
+        imageCredit.innerHTML =
+            `Image: <a href="${article.imageCredit.url}" target="_blank" rel="noopener noreferrer">${article.imageCredit.text}</a>`;
+
+    }
+
 
     // ==========================================
     // ARTICLE CONTENT
@@ -252,6 +262,16 @@ else {
                         <h2>
                             ${block.text}
                         </h2>
+                    `;
+
+                }
+
+                if (block.type === "source") {
+
+                    return `
+                        <p class="article-source">
+                            Source: <a href="${block.url}" target="_blank" rel="noopener noreferrer">${block.text}</a>
+                        </p>
                     `;
 
                 }

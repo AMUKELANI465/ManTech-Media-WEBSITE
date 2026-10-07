@@ -10,10 +10,8 @@
         content="width=device-width, initial-scale=1.0"
     >
 
-    <!-- Security: this site loads nothing from outside itself
-         (no external fonts/scripts/CDNs), so a strict Content-Security-Policy
-         costs nothing and blocks most injection attacks outright. -->
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data:; script-src 'self'; style-src 'self'; base-uri 'self'; form-action 'self' mailto:; frame-ancestors 'none'; object-src 'none';">
+        <!-- Images may load from HTTPS editorial sources; scripts and styles remain local. -->
+        <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data: https:; script-src 'self'; style-src 'self'; base-uri 'self'; form-action 'self' mailto:; frame-ancestors 'none'; object-src 'none';">
     <meta name="referrer" content="strict-origin-when-cross-origin">
 
     <meta
@@ -118,7 +116,7 @@
                     href="#newsletter"
                     class="subscribe-button"
                 >
-                    Subscribe
+                    Subscribe For Free 
                 </a>
 
 
@@ -285,7 +283,7 @@
                     businesses and ideas shaping South Africa
                     and the world.
 
-                </p>
+                </p> 
 
             </div>
 

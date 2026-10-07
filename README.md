@@ -17,6 +17,14 @@ site currently ships with 5 articles per category (News, Apple,
 Devices, Business, South Africa) written as real, full-length reads —
 publish over them or add more using the same template.
 
+To change a story image, edit its `image` value in `data/articles.js`.
+Use a local `/assets/...` path or a direct HTTPS image URL. Add an
+`imageCredit` with the creator/provider and a link to the image's source or
+license page; the article displays that credit beneath the image. You do not
+need to download or delete a remotely hosted image when swapping its URL.
+For factual reporting, add one or more `source` blocks at the end of the
+article's `content` array.
+
 ## Page map
 
 ```
@@ -52,9 +60,8 @@ last visit" under the form — this part never leaves their device.
 
 ## Security & SEO
 
-- Every page ships a strict Content-Security-Policy (safe to do since
-  the site loads nothing external — no fonts, no CDNs, no third-party
-  scripts).
+- Every page ships a Content-Security-Policy. Article imagery may load from
+  HTTPS providers; scripts and styles remain same-origin only.
 - The one place user input gets echoed back (search results) is escaped
   before insertion — see `escapeHTML()` in `js/main.js`.
 - `robots.txt` and `sitemap.xml` are at the project root and list every
