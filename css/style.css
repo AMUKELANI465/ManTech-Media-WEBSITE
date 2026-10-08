@@ -227,6 +227,7 @@ main,
 }
 
 
+
 /* =========================================================
    MENU BUTTON
    ========================================================= */
@@ -234,19 +235,50 @@ main,
 .menu-button {
     display: none;
 
-    width: 40px;
+    min-width: 76px;
     height: 40px;
+    padding: 0 10px;
 
-    flex-direction: column;
+    gap: 8px;
     align-items: center;
     justify-content: center;
-    gap: 5px;
+
+    border: 1px solid #111111;
+    border-radius: 999px;
+
+    transition:
+        background 0.2s ease,
+        color 0.2s ease;
 }
 
-.menu-button span {
-    width: 19px;
-    height: 1.5px;
+.menu-button:hover {
     background: #111111;
+    color: #ffffff;
+}
+
+.menu-button-label {
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.menu-chevron {
+    width: 7px;
+    height: 7px;
+
+    border-right: 1.5px solid currentColor;
+    border-bottom: 1.5px solid currentColor;
+
+    transform: translateY(-2px) rotate(45deg);
+    transition: transform 0.2s ease;
+}
+
+.menu-button[aria-expanded="true"] .menu-chevron {
+    transform: translateY(2px) rotate(225deg);
+}
+
+.menu-button:focus-visible {
+    outline: 2px solid currentColor;
+    outline-offset: 3px;
 }
 
 
