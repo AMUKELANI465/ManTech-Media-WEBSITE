@@ -245,6 +245,7 @@ main,
 
     border: 1px solid #111111;
     border-radius: 999px;
+    color: #111111;
 
     transition:
         background 0.2s ease,
@@ -252,8 +253,8 @@ main,
 }
 
 .menu-button:hover {
-    background: #111111;
-    color: #ffffff;
+    background: rgba(17, 17, 17, 0.06);
+    color: #111111;
 }
 
 .menu-button-label {
