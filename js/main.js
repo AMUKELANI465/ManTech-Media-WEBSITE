@@ -84,6 +84,13 @@ if (
 
         });
 
+    const featured =
+        articles.find(function (article) {
+
+            return article.id === "lagos-life-viral-browser-game";
+
+        }) || sortedArticles[0];
+
 
     // ==========================================
     // FEATURED STORY
@@ -91,11 +98,8 @@ if (
 
     if (
         featuredStory &&
-        sortedArticles.length > 0
+        featured
     ) {
-
-        const featured =
-            sortedArticles[0];
 
 
         featuredStory.innerHTML = `
@@ -175,7 +179,13 @@ if (
     if (latestList) {
 
         const latestArticles =
-            sortedArticles.slice(1, 4);
+            sortedArticles
+                .filter(function (article) {
+
+                    return article.id !== featured.id;
+
+                })
+                .slice(0, 3);
 
 
         latestList.innerHTML =

@@ -565,6 +565,28 @@ const articles = [
             { type: "paragraph", text: "Track the money actually spent, who benefits, how many local jobs last beyond construction, and whether energy and water commitments are independently measured. The AP report notes that data centres are becoming a political issue in the US; the same questions are relevant wherever new facilities are proposed. Amazon's announcement is a company commitment, not yet evidence of outcomes." },
             { type: "source", text: "Associated Press: Amazon to invest $1B into data center communities amid backlash (October 2, 2026)", url: "https://apnews.com/article/amazon-data-centers-1-billion-investment-91b65ba1729540c1c0d92e35deef35d8" }
         ]
+    },
+    {
+        id: "lagos-life-viral-browser-game",
+        title: "Lagos Life Surpasses 2 Million Players in Days, Taking the Tech Industry by Storm",
+        description: "A Nigerian-made life simulator surged past two million players in its first week, turning work, rent and city life into a shared online world.",
+        category: "news",
+        categoryName: "News",
+        date: "2026-10-11",
+        readTime: "5 min read",
+        image: "https://lagoslife.app/opengraph-image?3c97f788344d8ddc",
+        imageCredit: { text: "Lagos Life, official game website", url: "https://lagoslife.app/" },
+        content: [
+            { type: "paragraph", text: "Lagos Life is a Nigerian-made, browser-based life simulation game built around a virtual version of everyday city life. Created by developer Shalom Rayhamen, it launched on October 1, 2026. Vanguard reported on October 7 that the game had passed two million players within its first week. That milestone comes from the creator and the game's dashboard; the reported traffic figures have not been independently audited." },
+            { type: "heading", text: "A shared world built around everyday choices" },
+            { type: "paragraph", text: "Players create characters, take jobs, earn virtual naira, pay rent, manage their characters' needs and explore locations inspired by Lagos. The multiplayer design lets people meet and interact in the same online world, rather than playing through a purely solo simulation. Because it runs in a web browser, it can be reached from a phone or computer without installing a large game." },
+            { type: "heading", text: "Why it has travelled so quickly" },
+            { type: "paragraph", text: "The format pairs easy access with a setting that feels familiar to its intended audience. Work, housing costs, transport and going out become game systems, giving players recognizable material to share and talk about. Rayhamen announced that Abuja and Port Harcourt had joined the experience alongside the two-million-player milestone, extending the virtual map beyond Lagos." },
+            { type: "heading", text: "What the numbers do and do not show" },
+            { type: "paragraph", text: "A fast-growing player count is a strong signal of attention, but it does not by itself establish how many people return, how well the shared world handles peak traffic or how the in-game economy develops. The reported concurrent-player and visit totals are based on the game's dashboard, not an independent audit. The naira earned in the game is virtual currency with no real-world cash value; Lagos Life is entertainment, not a way to earn or withdraw money." },
+            { type: "source", text: "Vanguard News: Lagos Life game crosses 2 million users – here's how to play (October 7, 2026)", url: "https://www.vanguardngr.com/2026/10/lagos-life-game-crosses-2-million-users-heres-how-to-play/" },
+            { type: "source", text: "Lagos Life: Official game website", url: "https://lagoslife.app/" }
+        ]
     }
 
 ];
